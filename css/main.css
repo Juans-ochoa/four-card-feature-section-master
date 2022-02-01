@@ -1,0 +1,160 @@
+:root {
+    --color-red: hsl(0, 78%, 62%);
+    --color-cyan: hsl(180, 62%, 55%);
+    --color-orange: hsl(34, 97%, 64%);
+    --color-blue: hsl(212, 86%, 64%);
+    --color-dark-blue: hsl(234, 12%, 34%);
+    --color-grayis-blue: hsl(229, 6%, 66%);
+    --color-light-gray: hsl(0, 0%, 98%);
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-light-gray);
+    overflow-x: hidden;
+}
+
+header {
+    margin: 1rem auto;
+    padding: 0 3rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    width: 100%;
+}
+
+h1 {
+    font-weight: 200;
+    text-align: center;
+}
+
+h1 > span {
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 600;
+    text-align: left;
+}
+
+p {
+    text-align: center;
+}
+
+.container-general {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.container-card-1 {
+    display: flex;
+}
+.container-card-2 {
+    display: inherit;
+    flex-direction: inherit;
+}
+
+.card {
+    width: 300px;
+    height: 280px;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    background-color: var(--color-light-gray);
+    box-shadow: 0 0.5rem 1rem var(--color-grayis-blue);
+}
+
+.card:nth-child(1) {
+    border-top: thick solid var(--color-cyan);
+}
+
+.card:nth-child(2) {
+    border-top: thick solid var(--color-red);
+}
+
+.card:nth-child(3) {
+    border-top: thick solid var(--color-orange);
+}
+
+.card:nth-child(4) {
+    border-top: thick solid var(--color-blue);
+}
+
+.card-text {
+    text-align: left;
+    color: var(--color-grayis-blue);
+}
+
+.card-image {
+    margin-top: 2rem;
+    float: right;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        margin: 1rem auto;
+        padding: 0 6rem;
+    }
+
+    h1 > span {
+        display: block;
+        font-weight: 600;
+    }
+
+    .text-header {
+        width: 40%;
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    .container-general {
+        flex-direction: row;
+        width: 95vw;
+        margin: 0 auto;
+    }
+
+    .container-card-1 {
+        align-items: center;
+    }
+    .container-card-2 {
+        flex-direction: column;
+    }
+
+    .card {
+        height: 280px;
+        margin: 1rem;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
